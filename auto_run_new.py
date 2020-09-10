@@ -87,8 +87,8 @@ class Auto_run(unittest.TestCase):
         write_top("接口1资源占用情况"+str(pid)+ '\n')
         for i in range(10):
             time.sleep(120)
-            cmd_cpu = "top -n 1 -p %s |grep test-ji-api  |awk '{print $10}'"%pid
-            cmd_mem = "top -n 1 -p %s |grep test-ji-api  |awk '{print $11}'"%pid
+            cmd_cpu = "top -n 1 -p %s |grep test  |awk '{print $10}'"%pid
+            cmd_mem = "top -n 1 -p %s |grep test  |awk '{print $11}'"%pid
             cmd_nvidia = "nvidia-smi |grep Default |awk '{print $9}'|awk 'NR==1'"
             code,nvidia= runcmd(cmd_nvidia)
             code,cpu = runcmd(cmd_cpu)  #cpu占用
@@ -102,8 +102,8 @@ class Auto_run(unittest.TestCase):
         write_top("接口5资源占用情况" + str(pid)+'\n')
         for i in range(10):
             time.sleep(120)
-            cmd_cpu = "top -n 1 -p %s |grep test-ji-api  |awk '{print $10}'"%pid
-            cmd_mem = "top -n 1 -p %s |grep test-ji-api  |awk '{print $11}'"%pid
+            cmd_cpu = "top -n 1 -p %s |grep test  |awk '{print $10}'"%pid
+            cmd_mem = "top -n 1 -p %s |grep test  |awk '{print $11}'"%pid
             cmd_nvidia = "nvidia-smi |grep Default |awk '{print $9}'|awk 'NR==1'"
             code,nvidia= runcmd(cmd_nvidia)
             code,cpu = runcmd(cmd_cpu)  #cpu占用

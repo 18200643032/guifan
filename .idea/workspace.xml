@@ -4,8 +4,6 @@
     <list default="true" id="fd251b58-d651-4826-90a1-41cee2279919" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auto_run_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_run_new.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sh/free_num.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sh/free_num.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sh/zz.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sh/zz.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599645011809</updated>
       <workItem from="1599645013424" duration="992000" />
-      <workItem from="1599700825292" duration="9880000" />
+      <workItem from="1599700825292" duration="12223000" />
     </task>
     <servers />
   </component>
