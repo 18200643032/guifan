@@ -20,6 +20,8 @@ class Auto_run(unittest.TestCase):
             json_str[key]=vaule
         with open("/usr/local/ev_sdk/config/algo_config.json", "w") as f2:
             json.dump(json_str, f2)
+    def reduction_config(self):
+        runcmd("cp /zhengzhong/config/algo_config.json /usr/local/ev_sdk/config/")
     def test00001_not_function(self):
         """验证未授权返回-999"""
         code,connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_not_function}")
@@ -54,6 +56,7 @@ class Auto_run(unittest.TestCase):
         write_res(connet + '\n')
     def test000091_algo_config(self):
         """生成不同的结果图片"""
+        runcmd("cp /usr/local/ev_sdk/config/algo_config.json /zhengzhong/config/")
         config = Config_file.config
         for con in config:
             file_name = ''
@@ -62,7 +65,7 @@ class Auto_run(unittest.TestCase):
             self.file_config_setting(config[con])
             code,conten = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_run_sdk} {file_name}")
             write_res(conten + '\n')
-            runcmd("cp /zhengzhong/config/algo_config.json /usr/local/ev_sdk/config/")
+            self.reduction_config()
     def test000092_dynamiv_config(self):
         """动态传参生成不同的结果图片"""
         config = Config_file.config
