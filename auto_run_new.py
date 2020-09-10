@@ -74,7 +74,7 @@ class Auto_run(unittest.TestCase):
             for a, b in config[con].items():
                 file_name += a + "_" + str(b)
             code,conten = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_run_sdk_dynamiv} {file_name} {config[con]}")
-            write_res(conten + '\n')
+            write_res("动态传参"+conten + '\n')
     def test000093_function(self):
         """实现的接口测试"""
         for i in range(1,5):
@@ -84,7 +84,7 @@ class Auto_run(unittest.TestCase):
         """测试接口1和接口5是否存在内存显存泄露"""
         os.system(f"bash /zhengzhong/sh/zz.sh {Terminal.main_free_num1} &")
         code,pid = runcmd("pidof test-ji-api")
-        write_top("接口1资源占用情况"+ '\n')
+        write_top("接口1资源占用情况"+str(pid)+ '\n')
         for i in range(10):
             time.sleep(120)
             cmd_cpu = "top -n 1 -p %s |grep test-ji-api  |awk '{print $10}'"%pid
@@ -99,7 +99,7 @@ class Auto_run(unittest.TestCase):
         time.sleep(2)
         os.system(f"bash /zhengzhong/sh/zz.sh {Terminal.main_free_num5}")
         code, pid = runcmd("pidof test-ji-api")
-        write_top("接口5资源占用情况" + '\n')
+        write_top("接口5资源占用情况" + str(pid)+'\n')
         for i in range(10):
             time.sleep(120)
             cmd_cpu = "top -n 1 -p %s |grep test-ji-api  |awk '{print $10}'"%pid
