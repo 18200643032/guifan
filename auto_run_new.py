@@ -60,7 +60,7 @@ class Auto_run(unittest.TestCase):
         config = Config_file.config
         for con in config:
             file_name = ''
-            for a, b in con.items():
+            for a, b in config[con].items():
                 file_name += a + "_" + str(b)
             self.file_config_setting(config[con])
             code,conten = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_run_sdk} {file_name}")
@@ -71,7 +71,7 @@ class Auto_run(unittest.TestCase):
         config = Config_file.config
         for con in config:
             file_name = ''
-            for a, b in con.items():
+            for a, b in config[con].items():
                 file_name += a + "_" + str(b)
             code,conten = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_run_sdk_dynamiv} {file_name} {config[con]}")
             write_res(conten + '\n')
@@ -82,7 +82,8 @@ class Auto_run(unittest.TestCase):
             write_res(conten + '\n')
     def test000093_top_free(self):
         """测试接口1和接口5是否存在内存显存泄露"""
-        code,pid = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_free_num1}")
+        os.system(f"bash /zhengzhong/sh/zz.sh {Terminal.main_free_num1} &")
+        code,pid = runcmd("pidof test-ji-api")
         write_top("接口1资源占用情况"+ '\n')
         for i in range(10):
             time.sleep(120)
@@ -96,7 +97,8 @@ class Auto_run(unittest.TestCase):
             write_top("当前时间:%s \n cpu占用:%s \n 内存占用:%s \n 显存占用:%s"%(t,cpu,mem,nvidia))
         os.system("kill -9 %s"%pid)
         time.sleep(2)
-        code, pid = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_free_num5}")
+        os.system(f"bash /zhengzhong/sh/zz.sh {Terminal.main_free_num5}")
+        code, pid = runcmd("pidof test-ji-api")
         write_top("接口5资源占用情况" + '\n')
         for i in range(10):
             time.sleep(120)

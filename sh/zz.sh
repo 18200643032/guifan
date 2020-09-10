@@ -118,18 +118,14 @@ fi
 #接口1测试内存显存泄露
 main_free_num1(){
 cd /zhengzhong/sh
-./free_num.sh $free_code1 &
+nohup bash free_num.sh $free_code1 &
 sleep 5
-pid=`pidof test-ji-api`
-echo  pid
 }
-
+#接口5测试内存显存泄露
 main_free_num5(){
 cd /zhengzhong/sh
-./free_num.sh $free_code2 &
+nohup bash free_num.sh $free_code2 &
 sleep 5
-pid=`pidof test-ji-api`
-echo  pid
 }
 
 main_run_sdk(){
