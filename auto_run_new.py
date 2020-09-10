@@ -22,40 +22,40 @@ class Auto_run(unittest.TestCase):
             json.dump(json_str, f2)
     def test00001_not_function(self):
         """验证未授权返回-999"""
-        code = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_not_function}")
-        write_res(code+'\n')
+        code,connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_not_function}")
+        write_res(connet+'\n')
     def test00002_yes_function(self):
         """授权"""
-        code = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_yes_function}")
-        write_res(code + '\n')
+        code, connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_yes_function}")
+        write_res(connet + '\n')
     def test00003_ev_license(self):
         """ev_license版本是否一致"""
-        code = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_ev_license}")
-        write_res(code + '\n')
+        code,connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_ev_license}")
+        write_res(connet + '\n')
     def test00004_project_path(self):
         """验证工程路径与规范一致"""
-        code = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_project_path}")
-        write_res(code + '\n')
+        code,connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_project_path}")
+        write_res(connet + '\n')
     def test00005_make_file(self):
         """验证test.cpp和makefile"""
-        code = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_make_file}")
-        write_res(code + '\n')
+        code, connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_make_file}")
+        write_res(connet + '\n')
     def test00006_catalogue(self):
         """test-ji-api和license.txt移动到任意目录，都需要能够正常运行目录"""
-        code = runcmd(f"bash /zhengzhong/zz.sh {Terminal.main_catalogue}")
-        write_res(code + '\n')
+        code,connet = runcmd(f"bash /zhengzhong/zz.sh {Terminal.main_catalogue}")
+        write_res(connet + '\n')
     def test00007_libji_connect(self):
         """libjo.so链接所有库"""
-        code = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_libji_connect}")
-        write_res(code + '\n')
+        code，connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_libji_connect}")
+        write_res(connet + '\n')
     def test00008_verification_pem(self):
         """# 公私钥位置，名称验证"""
-        code = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_verification_pem}")
-        write_res(code + '\n')
+        code,connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_verification_pem}")
+        write_res(connet + '\n')
     def test00009_libji_connect(self):
         """libjo.so链接所有库"""
-        code = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_libji_connect}")
-        write_res(code + '\n')
+        code,connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_libji_connect}")
+        write_res(connet + '\n')
     def test000091_algo_config(self):
         """生成不同的结果图片"""
         config = Config_file.config
