@@ -7,7 +7,10 @@ def runcmd(command,environment="export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib6
     returncode = res_p.returncode
     if returncode == 0:
         if stdout.decode('utf-8').endswith('\n'):
-            return True, stdout.replace('\n', '')
-        return True, stdout
+            return True, stdout.decode('utf-8').replace('\n','')
+        return True, stdout.decode('utf-8')
     else:
-        return False, stderr
+        return False, stderr.decode('utf-8')
+
+
+
