@@ -86,6 +86,7 @@ class Auto_run(unittest.TestCase):
     def test000094_top_free(self):
         """测试接口1和接口5是否存在内存显存泄露"""
         os.system(f"bash /zhengzhong/sh/zz.sh {Terminal.main_free_num1} &")
+        time.sleep(5)
         code,pid = runcmd("pidof test-ji-api")
         write_top("接口1资源占用情况"+str(pid)+ '\n')
         for i in range(10):
