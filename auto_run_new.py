@@ -6,9 +6,8 @@ import os
 import time
 import json
 import unittest
-from top_config import  write_res,time_time,write_top
 from config import Terminal,Config_file
-from utls.subprocess_test import runcmd
+from utls.subprocess_test import runcmd,write_top,time_time,write_res
 class Auto_run(unittest.TestCase):
     def setUp(self):
         pass
@@ -22,35 +21,35 @@ class Auto_run(unittest.TestCase):
             json.dump(json_str, f2)
     def reduction_config(self):
         runcmd("cp /zhengzhong/config/algo_config.json /usr/local/ev_sdk/config/")
-    def test00001_not_function(self):
+    def atest00001_not_function(self):
         """验证未授权返回-999"""
         code,connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_not_function}")
         write_res(connet+'\n')
-    def test00002_yes_function(self):
+    def atest00002_yes_function(self):
         """授权"""
         code, connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_yes_function}")
         write_res(connet + '\n')
-    def test00003_ev_license(self):
+    def atest00003_ev_license(self):
         """ev_license版本是否一致"""
         code,connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_ev_license}")
         write_res(connet + '\n')
-    def test00004_project_path(self):
+    def atest00004_project_path(self):
         """验证工程路径与规范一致"""
         code,connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_project_path}")
         write_res(connet + '\n')
-    def test00005_make_file(self):
+    def atest00005_make_file(self):
         """验证test.cpp和makefile"""
         code, connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_make_file}")
         write_res(connet + '\n')
-    def test00006_catalogue(self):
+    def atest00006_catalogue(self):
         """test-ji-api和license.txt移动到任意目录，都需要能够正常运行目录"""
         code,connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_catalogue}")
         write_res(connet + '\n')
-    def test00007_libji_connect(self):
+    def atest00007_libji_connect(self):
         """libjo.so链接所有库"""
         code,connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_libji_connect}")
         write_res(connet + '\n')
-    def test00008_verification_pem(self):
+    def atest00008_verification_pem(self):
         """# 公私钥位置，名称验证"""
         code,connet = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_verification_pem}")
         write_res(connet + '\n')
@@ -66,6 +65,7 @@ class Auto_run(unittest.TestCase):
             code,conten = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_run_sdk} {file_name}")
             write_res(conten + '\n')
             self.reduction_config()
+
     def test000092_dynamiv_config(self):
         """动态传参生成不同的结果图片"""
         config = Config_file.config
@@ -75,7 +75,7 @@ class Auto_run(unittest.TestCase):
                 file_name += a + "_" + str(b)
             code,conten = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_run_sdk_dynamiv} {file_name} {config[con]}")
             write_res("动态传参"+conten + '\n')
-    def test000093_function(self):
+    def atest000093_function(self):
         """实现的接口测试"""
         for i in range(1,5):
             code,conten=runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_function} {i}")
@@ -83,7 +83,7 @@ class Auto_run(unittest.TestCase):
 
 
 
-    def test000094_top_free(self):
+    def atest000094_top_free(self):
         """测试接口1和接口5是否存在内存显存泄露"""
         os.system(f"bash /zhengzhong/sh/zz.sh {Terminal.main_free_num1} &")
         time.sleep(10)
@@ -99,9 +99,9 @@ class Auto_run(unittest.TestCase):
             code,cpu = runcmd(cmd_cpu)  #cpu占用
             code,mem = runcmd(cmd_mem)  #内存占用
             t = time_time()               #当前时间
-            write_top("当前时间:%s \n cpu占用:%s \n 内存占用:%s \n 显存占用:%s"%(t,cpu,mem,nvidia))
+            write_top("当前时间:%s \n cpu占用:%s \n 内存占用:%s \n 显存占用:%s \n"%(t,cpu,mem,nvidia))
         os.system("kill -9 %s"%pid)
-        time.sleep(2)
+        time.sleep(5)
         os.system(f"bash /zhengzhong/sh/zz.sh {Terminal.main_free_num5}")
         time.sleep(10)
         code, pid = runcmd("pidof test-ji-api")
@@ -115,7 +115,7 @@ class Auto_run(unittest.TestCase):
             code,cpu = runcmd(cmd_cpu)  #cpu占用
             code,mem = runcmd(cmd_mem)  #内存占用
             t = time_time()               #当前时间
-            write_top("当前时间:%s \n cpu占用:%s \n 内存占用:%s \n 显存占用:%s"%(t,cpu,mem,nvidia))
+            write_top("当前时间:%s \n cpu占用:%s \n 内存占用:%s \n 显存占用:%s \n"%(t,cpu,mem,nvidia))
 
 
 
