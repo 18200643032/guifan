@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fd251b58-d651-4826-90a1-41cee2279919" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto_run_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_run_new.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utls/subprocess_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/utls/subprocess_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sh/zz.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sh/zz.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +85,9 @@
       <workItem from="1599645013424" duration="992000" />
       <workItem from="1599700825292" duration="27057000" />
       <workItem from="1600670743068" duration="2900000" />
+      <workItem from="1602324002099" duration="933000" />
+      <workItem from="1602379718742" duration="600000" />
+      <workItem from="1602385834667" duration="1000" />
     </task>
     <servers />
   </component>
