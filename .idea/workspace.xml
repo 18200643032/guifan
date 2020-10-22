@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd251b58-d651-4826-90a1-41cee2279919" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/guifan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/guifan.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_run_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_run_new.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sh/zz.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sh/zz.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,10 +43,38 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/untitled1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.__init__">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="guifan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="subprocess_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="guifan" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -66,8 +97,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test.sh" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/test.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Shell Script.test.sh" />
         <item itemvalue="Python.subprocess_test" />
       </list>
     </recent_temporary>
@@ -88,6 +132,7 @@
       <workItem from="1602324002099" duration="933000" />
       <workItem from="1602379718742" duration="600000" />
       <workItem from="1602385834667" duration="1000" />
+      <workItem from="1603340152512" duration="5594000" />
     </task>
     <servers />
   </component>
@@ -120,26 +165,26 @@
     </state>
     <state x="504" y="220" width="380" height="313" key="FileChooserDialogImpl/48.27.1106.573@48.27.1106.573" timestamp="1600671694499" />
     <state x="819" y="330" width="424" height="491" key="FileChooserDialogImpl/48.27.1870.900@48.27.1870.900" timestamp="1600671714708" />
-    <state width="1816" height="110" key="GridCell.Tab.0.bottom" timestamp="1600325014426">
+    <state width="1816" height="221" key="GridCell.Tab.0.bottom" timestamp="1603355302862">
       <screen x="48" y="27" width="1870" height="900" />
     </state>
-    <state width="1816" height="110" key="GridCell.Tab.0.bottom/48.27.1870.900@48.27.1870.900" timestamp="1600325014426" />
-    <state width="1816" height="110" key="GridCell.Tab.0.center" timestamp="1600325014425">
+    <state width="1816" height="221" key="GridCell.Tab.0.bottom/48.27.1870.900@48.27.1870.900" timestamp="1603355302862" />
+    <state width="1816" height="221" key="GridCell.Tab.0.center" timestamp="1603355302862">
       <screen x="48" y="27" width="1870" height="900" />
     </state>
-    <state width="1816" height="110" key="GridCell.Tab.0.center/48.27.1870.900@48.27.1870.900" timestamp="1600325014425" />
-    <state width="1816" height="110" key="GridCell.Tab.0.left" timestamp="1600325014424">
+    <state width="1816" height="221" key="GridCell.Tab.0.center/48.27.1870.900@48.27.1870.900" timestamp="1603355302862" />
+    <state width="1816" height="221" key="GridCell.Tab.0.left" timestamp="1603355302861">
       <screen x="48" y="27" width="1870" height="900" />
     </state>
-    <state width="1816" height="110" key="GridCell.Tab.0.left/48.27.1870.900@48.27.1870.900" timestamp="1600325014424" />
-    <state width="1816" height="110" key="GridCell.Tab.0.right" timestamp="1600325014425">
+    <state width="1816" height="221" key="GridCell.Tab.0.left/48.27.1870.900@48.27.1870.900" timestamp="1603355302861" />
+    <state width="1816" height="221" key="GridCell.Tab.0.right" timestamp="1603355302862">
       <screen x="48" y="27" width="1870" height="900" />
     </state>
-    <state width="1816" height="110" key="GridCell.Tab.0.right/48.27.1870.900@48.27.1870.900" timestamp="1600325014425" />
-    <state x="464" y="112" width="1037" height="737" key="SettingsEditor" timestamp="1599645255165">
+    <state width="1816" height="221" key="GridCell.Tab.0.right/48.27.1870.900@48.27.1870.900" timestamp="1603355302862" />
+    <state x="464" y="112" width="1037" height="737" key="SettingsEditor" timestamp="1603352460516">
       <screen x="48" y="27" width="1870" height="900" />
     </state>
-    <state x="464" y="112" width="1037" height="737" key="SettingsEditor/48.27.1870.900@48.27.1870.900" timestamp="1599645255165" />
+    <state x="464" y="112" width="1037" height="737" key="SettingsEditor/48.27.1870.900@48.27.1870.900" timestamp="1603352460516" />
     <state x="708" y="384" width="540" height="192" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1599893528533">
       <screen x="48" y="27" width="1870" height="900" />
     </state>
@@ -147,5 +192,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/guifan$subprocess_test.coverage" NAME="subprocess_test Coverage Results" MODIFIED="1599895728690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utls" />
+    <SUITE FILE_PATH="coverage/guifan$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1603355302848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

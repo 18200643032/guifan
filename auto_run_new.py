@@ -73,7 +73,7 @@ class Auto_run(unittest.TestCase):
             file_name = ''
             for a, b in config[con].items():
                 file_name += a + "_" + str(b)
-            code,conten = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_run_sdk_dynamiv} {file_name} {config[con]}")
+            code,conten = runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_run_sdk_dynamiv} {file_name} '{json.dumps(config[con])}'")
             write_res("动态传参"+conten + '\n')
     def test000093_function(self):
         """实现的接口测试"""
