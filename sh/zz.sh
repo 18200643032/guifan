@@ -141,9 +141,7 @@ fi
 
 main_run_sdk_dynamiv(){
 cd /usr/local/ev_sdk/bin/
-#cmd=`./test-ji-api -f 1 -i /zhengzhong/1.jpg -o /zhengzhong/dynamiv_res/$name.jpg -a '$name1' 2>&1`
-n='./test-ji-api -f 1 -i /zhengzhong/1.jpg -o /zhengzhong/dynamiv_res/$name.jpg -a '$name1''
-echo $n
+cmd=`./test-ji-api -f 1 -i /zhengzhong/1.jpg -o /zhengzhong/dynamiv_res/$name.jpg -a $name1 2>&1`
 res=`echo $cmd |grep -e "return 0"`
 if [[ $res == "" ]];then
     echo $name"图片保存失败"

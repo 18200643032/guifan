@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd251b58-d651-4826-90a1-41cee2279919" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/guifan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/guifan.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auto_run_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_run_new.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sh/zz.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sh/zz.sh" afterDir="false" />
@@ -52,7 +51,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.__init__">
+  <component name="RunManager" selected="Shell Script.test.sh">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="guifan" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.__init__" />
         <item itemvalue="Shell Script.test.sh" />
+        <item itemvalue="Python.__init__" />
         <item itemvalue="Python.subprocess_test" />
       </list>
     </recent_temporary>
@@ -132,7 +131,7 @@
       <workItem from="1602324002099" duration="933000" />
       <workItem from="1602379718742" duration="600000" />
       <workItem from="1602385834667" duration="1000" />
-      <workItem from="1603340152512" duration="5594000" />
+      <workItem from="1603340152512" duration="10853000" />
     </task>
     <servers />
   </component>
@@ -165,22 +164,22 @@
     </state>
     <state x="504" y="220" width="380" height="313" key="FileChooserDialogImpl/48.27.1106.573@48.27.1106.573" timestamp="1600671694499" />
     <state x="819" y="330" width="424" height="491" key="FileChooserDialogImpl/48.27.1870.900@48.27.1870.900" timestamp="1600671714708" />
-    <state width="1816" height="221" key="GridCell.Tab.0.bottom" timestamp="1603355302862">
+    <state width="1816" height="221" key="GridCell.Tab.0.bottom" timestamp="1603355877923">
       <screen x="48" y="27" width="1870" height="900" />
     </state>
-    <state width="1816" height="221" key="GridCell.Tab.0.bottom/48.27.1870.900@48.27.1870.900" timestamp="1603355302862" />
-    <state width="1816" height="221" key="GridCell.Tab.0.center" timestamp="1603355302862">
+    <state width="1816" height="221" key="GridCell.Tab.0.bottom/48.27.1870.900@48.27.1870.900" timestamp="1603355877923" />
+    <state width="1816" height="221" key="GridCell.Tab.0.center" timestamp="1603355877921">
       <screen x="48" y="27" width="1870" height="900" />
     </state>
-    <state width="1816" height="221" key="GridCell.Tab.0.center/48.27.1870.900@48.27.1870.900" timestamp="1603355302862" />
-    <state width="1816" height="221" key="GridCell.Tab.0.left" timestamp="1603355302861">
+    <state width="1816" height="221" key="GridCell.Tab.0.center/48.27.1870.900@48.27.1870.900" timestamp="1603355877921" />
+    <state width="1816" height="221" key="GridCell.Tab.0.left" timestamp="1603355877920">
       <screen x="48" y="27" width="1870" height="900" />
     </state>
-    <state width="1816" height="221" key="GridCell.Tab.0.left/48.27.1870.900@48.27.1870.900" timestamp="1603355302861" />
-    <state width="1816" height="221" key="GridCell.Tab.0.right" timestamp="1603355302862">
+    <state width="1816" height="221" key="GridCell.Tab.0.left/48.27.1870.900@48.27.1870.900" timestamp="1603355877920" />
+    <state width="1816" height="221" key="GridCell.Tab.0.right" timestamp="1603355877922">
       <screen x="48" y="27" width="1870" height="900" />
     </state>
-    <state width="1816" height="221" key="GridCell.Tab.0.right/48.27.1870.900@48.27.1870.900" timestamp="1603355302862" />
+    <state width="1816" height="221" key="GridCell.Tab.0.right/48.27.1870.900@48.27.1870.900" timestamp="1603355877922" />
     <state x="464" y="112" width="1037" height="737" key="SettingsEditor" timestamp="1603352460516">
       <screen x="48" y="27" width="1870" height="900" />
     </state>
