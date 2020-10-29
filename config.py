@@ -14,6 +14,7 @@ class Config_file():
         "roi_fill":{"roi_fill":True},
         "draw_confidence":{"draw_confidence":False},
         "thresh":{"thresh":9},
+        "roi_line_thickness":{"roi_line_thickness":12},
         # 普通参数
 		"warning_text_left_top":{"warning_text_left_top":[10,10]}, #报警文字左上角坐标
 		"warning_text_bg_color":{"warning_text_bg_color":[0,100,200,0]},#报警文字背景颜色
