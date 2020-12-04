@@ -81,7 +81,13 @@ class Auto_run(unittest.TestCase):
             code,conten=runcmd(f"bash /zhengzhong/sh/zz.sh {Terminal.main_function} {i}")
             write_res(conten + '\n')
 
-
+    def test_vidoe_fu(self):
+        """第一个接口是否能跑完一个视频"""
+        a1 = os.system("cd /usr/local/ev_sdk/bin;./test-ji-api -f 1 -i /zhengzhong/1.mp4 ")
+        if a1 == 0:
+            write_res("跑完视频没有问题" + '\n')
+        else:
+            write_res("跑完视频有问题error" + '\n')
 
     def atest000094_top_free(self):
         """测试接口1和接口5是否存在内存显存泄露"""
